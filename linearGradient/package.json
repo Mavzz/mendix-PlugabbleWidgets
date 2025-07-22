@@ -1,0 +1,43 @@
+{
+  "name": "lineargradient",
+  "widgetName": "LinearGradient",
+  "version": "1.0.0",
+  "description": "attempting a custom linear gradient for react native application",
+  "copyright": "Myself",
+  "author": "Venkataramaaditya",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "config": {
+    "projectPath": "./tests/testProject"
+  },
+  "packagePath": "myself",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "test": "pluggable-widgets-tools test:unit:native --no-cache --ci",
+    "test:unit": "pluggable-widgets-tools test:unit:native --coverage",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "jest-junit": {
+    "output": "./dist/testresults/TESTS-Jest.xml"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.15.0"
+  },
+  "dependencies": {
+    "react-native-linear-gradient": "^2.8.3"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  }
+}

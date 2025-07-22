@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="myself.lineargradient.LinearGradient" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Linear Gradient</name>
+    <description>attempting a custom linear gradient for react native application</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="colors" type="attribute" required="false">
+                <caption>colors</caption>
+                <description>The colors you want in the gradient in array format</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="content" type="widgets" required="false">
+	            <caption>Content</caption>
+	            <description>Content of a box</description>
+            </property>
+            <property key="gradientConfig" type="textTemplate" required="false" multiline="true">
+                <caption>Gradient Configuration</caption>
+                <description>Configuration for the gradient, such as start and end points</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
